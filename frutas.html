@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH&</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Sacramento&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Enlace al archivo JS de Bootstrap (jQuery incluido) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <!--link css-->
+    <link rel="stylesheet" href="css/secciones.css">
+</head>
+<body>
+    <div class ="padre">
+        <div class="menu">
+            <a href="index.html" class="logo">
+                <img src="img/logo/logo.png" alt="logo" width="110" height="110"></a>
+            
+                <nav class="nav">
+                <a href="index.html"> <i class="fa fa-home" "></i>
+                    Inicio </a>
+                <a href="/SMK.3/Informacion.html"><i class="fa fa-envelope" "></i>
+                    Contacto </a>
+                <a href="registro.html"><i class="fa fa-heart" "></i>
+                    Registrate </a>
+            </nav>
+
+            <!--ICONOS LOGIN Y CARRITO-->
+
+        </div>
+
+
+
+        <!------------------------------------ SECCIONES  ---------------------------->
+        <section class="section">
+            <div class="Secciones">
+                <article class="seccion"> 
+                    <article class="producto" data-id="1" data-nombre="Guindas" data-precio="6010" data-imagen-url="img/cogelado/congelado (1).png">
+                        <div class="imagen">
+                            <img src="/SMK.3/img/fruta/fruta (1).png" alt="cogelado(1)"> 
+                            <div class="info">
+                                <h2>$6010</h2>
+                                <p>Guindas kg</p>
+                                <button class="agregar">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+                
+                <article class="seccion"> 
+                    <article class="producto" data-id="2" data-nombre="Manzanas" data-precio="6020" data-imagen-url="img/cogelado/congelado (2).png">
+                        <div class="imagen">
+                            <img src="/SMK.3/img/fruta/fruta (2).png" alt="cogelado(2)"> 
+                            <div class="info">
+                                <h2>$6020</h2>
+                                <p>Manzanas kg</p>
+                                <button class="agregar">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+                
+                <article class="seccion"> 
+                    <article class="producto" data-id="3" data-nombre="Palta" data-precio="6030" data-imagen-url="img/cogelado/congelado (3).png">
+                        <div class="imagen">
+                            <img src="/SMK.3/img/fruta/fruta (3).png" alt="cogelado(3)"> 
+                            <div class="info">
+                                <h2>$6030</h2>
+                                <p>Palta kg</p>
+                                <button class="agregar">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+                
+                <article class="seccion"> 
+                    <article class="producto" data-id="4" data-nombre="Pera" data-precio="6040" data-imagen-url="img/cogelado/congelado (4).png">
+                        <div class="imagen">
+                            <img src="/SMK.3/img/fruta/fruta (4).png" alt="cogelado(4)"> 
+                            <div class="info">
+                                <h2>$6040</h2>
+                                <p>Pera kg</p>
+                                <button class="agregar">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+                
+                <article class="seccion"> 
+                    <article class="producto" data-id="5" data-nombre="Naranja" data-precio="6050" data-imagen-url="img/cogelado/congelado (5).png">
+                        <div class="imagen">
+                            <img src="/SMK.3/img/fruta/fruta (5).png" alt="cogelado(5)"> 
+                            <div class="info">
+                                <h2>$6050</h2>
+                                <p>Naranja kg</p>
+                                <button class="agregar">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+                
+                <article class="seccion"> 
+                    <article class="producto" data-id="6" data-nombre="Piña" data-precio="6060" data-imagen-url="img/cogelado/congelado (6).png">
+                        <div class="imagen">
+                            <img src="/SMK.3/img/fruta/fruta (6).png" alt="cogelado(6)"> 
+                            <div class="info">
+                                <h2>$6060</h2>
+                                <p>Piña kg</p>
+                                <button class="agregar">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+            </div>
+        </section>
+        <aside>
+            <h2>Carro de Compras</h2>
+            <ul id="carro">
+                <li>Total de la compra: $0.00</li>
+            </ul>
+            <button id="mostrar-carrito" onclick="window.location.href='Carrito.html'">Mostrar Carrito</button>
+        </aside>
+    <script src="/SMK.3/js/carro.js"></script>
+    <!------------------- FOOTER----------------->
+    <footer class="footer">
+        <nav class="pie">
+            <a href="#">Desarrollado por Daniel Plasencia & Thiare Hernández</a>
+            
+        </nav>
+    </footer>
+    
+</body>
+</html>

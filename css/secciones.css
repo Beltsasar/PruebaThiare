@@ -1,0 +1,288 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    text-decoration:none;
+}
+
+/* Definición de variables CSS personalizadas */
+:root{
+    --orange:#FF914D;
+    --gris:#464545a3;
+    --blanco:#ffffff;
+    --box-shadow:0 .5rem 1.5rem rgb(234, 234, 234);
+    --border:.2rem solid rgba(255, 255, 255, 0.896);
+    --outline:.1rem solid rgb(214, 61, 61);
+    --outline-hover:.2rem solid var(--black);
+}
+
+/* --------------------------- NAVBAR ----------------------------- */
+
+.menu {
+    top: 30;
+    left: 30;
+    width: 100%;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--orange);
+    border-radius: 35px; /* Borde redondeado */
+    overflow: hidden; /* Para que el borde no se vea afectado por los elementos internos */
+    box-shadow: var(--box-shadow);
+    border:5px solid white;
+    box-sizing:border-box;
+}
+
+.menu .logo{
+    padding:1rem;
+}
+.menu .nav{
+    display:flex;
+    align-items:center;
+    padding: 0.5rem 1rem; /*padding de arriba y abajo 0.5rem y de los lados 1rem*/
+}   
+.menu .nav a{
+    color:var(--blanco);
+    padding:1rem;/*padding de arriba y abajo 1rem y de los lados 1rem*/
+    font-size:1.2rem;
+    text-decoration:none;
+}
+.menu .social{
+    padding: 0.2rem 0.2rem; /*padding de arriba y abajo 0.5rem y de los lados 1rem*/
+    display:flex;
+    align-items:center; /*alinear iconos*/
+}
+.menu .social a{
+    color:var(--gris);
+    padding:10px;
+    font-size:1.2rem;
+    text-decoration:none;  
+}   
+
+.menu .nav a:hover{
+    color:var(--gris); /* Cambia el color al pasar el mouse por encima*/
+}
+
+.social{
+    float:right; 
+    margin-top:0px;
+}
+
+.menu .social i{
+    color:var(--blanco);
+    padding:1rem;
+    font-size:1.2rem;
+    justify-content:space-between;
+    display:inline-block;
+    align-items:center;
+}   
+.menu .nav, .social{
+    width:100%;
+    justify-content: center;
+    border-top:1px solid var(--blanco);
+    padding-top:1rem;
+}
+.menu .social i:hover{
+    color:var(--gris); /* Cambia el color al pasar el mouse por encima*/
+}
+.menu .logo{
+    padding:0.1px;
+}
+.menu .logo img{
+    width:100px;
+    height:100px;
+    padding:0.3px;
+}
+
+/*--------------------------CONTENEDOR PRINCIPAL--------------------------*/
+.container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 100px); /* Altura total menos la altura del navbar */
+    overflow: hidden;
+}
+
+/*--------------------------SECCIONES--------------------------*/
+.Secciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    width: calc(100% - 370px); /* Ajusta el ancho para dejar espacio para el aside */
+    overflow-y: auto;
+}
+
+.seccion {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    box-shadow:none;
+}
+
+.info {
+    background-color: rgba(255, 255, 255, 0.092);
+    border-radius: 35px; /* Borde redondeado */
+    padding:5px;
+    text-align: center;
+    margin-top: auto; /* Mueve el pie de imagen al final del contenedor */
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--orange); 
+}
+
+.info p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgba(108, 105, 105, 0.907); 
+}
+
+.agregar {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.agregar:hover {
+    background-color: #ff7f00;
+}
+
+/* --------------------------- FOOTER ----------------------------- */
+.footer { 
+    align-items: center;
+    background-color: var(--orange);
+    border-radius: 35px; /* Borde redondeado */
+    overflow: hidden; /* Para que el borde no se vea afectado por los elementos internos */
+    box-shadow: var(--box-shadow);
+    border:5px solid white;
+}
+
+.footer-container {
+    width: 90%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.pie {
+    text-align: center; /* Centrar el texto */
+}
+.footer .pie a {
+    color: var(--blanco); /* Color del texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 10px; /* Espaciado entre enlaces */
+    font-size:13px; /* Tamaño de la fuente */
+}
+
+.footer .pie a:hover {
+    color: var(--gris); /* Cambia el color al pasar el mouse por encima */
+}   
+
+/*Daniel*/
+aside {
+    padding: 20px;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fff;
+    width: 350px;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 0 0 10px;
+    position: fixed;
+    right: 0;
+    top: 100px; /* Ajusta para que esté debajo del navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+aside h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #ff6b00;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+aside ul li {
+    font-size: 1em;
+    padding: 10px;
+    border-bottom: 1px solid #ff6b00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside ul li:last-child {
+    border-bottom: none;
+}
+
+aside button {
+    background-color: #ff6b00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    width: 80%;
+    text-align: center;
+}
+
+aside button:hover {
+    background-color: #e65a00;
+}
+
+aside .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+aside .button-container button {
+    width: 48%;
+}
+
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column; /* Cambia a columna para mostrar el aside debajo */
+    }
+
+    .Secciones {
+        width: 100%; /* Ajusta el ancho al 100% para ocupar toda la pantalla */
+    }
+
+    aside {
+        width: 100%; /* Ajusta el ancho al 100% */
+        position: relative; /* Quita la posición fija para que se mueva con el contenido */
+        top: 0; /* Reinicia la posición top */
+        left: 0; /* Reinicia la posición left */
+        margin-top: 20px; /* Añade margen arriba para separarlo de las secciones */
+        border-radius: 0; /* Quita el border-radius */
+        margin-bottom: 0px;
+    }
+}

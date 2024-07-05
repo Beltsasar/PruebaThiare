@@ -1,0 +1,167 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    text-decoration:none;
+    
+
+    
+}
+/* Definición de variables CSS personalizadas */
+:root{
+    --orange:#FF914D;
+    --gris:#464545a3;
+    --blanco:#ffffff;
+    --box-shadow:0 .5rem 1.5rem rgb(234, 234, 234);
+    --border:.2rem solid rgba(255, 255, 255, 0.896);
+    --outline:.1rem solid rgb(214, 61, 61);
+    --outline-hover:.2rem solid var(--black);
+}
+
+
+/* --------------------------- NAVBAR ----------------------------- */
+
+
+
+.menu {
+    
+    top: 30;
+    left: 30;
+    width: 100%;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--orange);
+    border-radius: 35px; /* Borde redondeado */
+    overflow: hidden; /* Para que el borde no se vea afectado por los elementos internos */
+    box-shadow: var(--box-shadow);
+    border:5px solid white;
+    box-sizing:border-box;
+    z-index: 1000; /* Z-index alto para que se superponga al contenido */
+}
+
+.menu .logo{
+    padding:1rem;
+}
+.menu .nav{
+    display:flex;
+    align-items:center;
+    pading: 0.5rem 1rem; /*padding de arriba y abajo 0.5rem y de los lados 1rem*/
+}   
+.menu .nav a{
+    color:var(--blanco);
+    padding:1rem;/*padding de arriba y abajo 1rem y de los lados 1rem*/
+    font-size:1.2rem;
+    text-decoration:none;
+}
+.menu .social{
+    padding: 0.2rem 0.2rem; /*padding de arriba y abajo 0.5rem y de los lados 1rem*/
+    display:flex;
+    align-items:center; /*alinear iconos*/
+}
+.menu .social a{
+    color:var(--gris);
+    padding:10px;
+    font-size:1.2rem;
+    text-decoration:none;  
+}   
+
+.menu .nav a:hover{
+    color:var(--gris) /* Cambia el color al pasar el mouse por encima*/
+}
+
+.social{
+    float:right; 
+    margin-top:0px;
+}
+
+.menu .social i{
+    color:var(--blanco);
+    padding:1rem;
+    font-size:1.2rem;
+    justify-content:space-between;
+    display:inline-block;
+    align-items:center;
+
+}   
+.menu .nav, .social{
+    width:100%
+    justify-content: center;
+    boder-top:1px solid vr(--blanco);
+    padding-top:1rem;
+}
+.menu .social i:hover{
+    color:var(--gris); /* Cambia el color al pasar el mouse por encima*/
+}
+.menu .logo{
+    padding:0.1px;
+}
+.menu .logo img{
+    width:100px;
+    height:100px;
+    padding:0.3px;
+}
+
+
+
+
+/* --------------------------- CARRUSEL ----------------------------- */
+
+.carrusel-container {
+    border: 10px solid white; /* Ancho y color del borde */
+    border-radius: 20px; /* Borde redondeado para un aspecto más suave */
+    overflow: hidden; /* Para ocultar cualquier parte del carrusel que se extienda más allá del borde */
+    box-shadow: 0 0 20px rgba(195, 195, 195, 0.914); /* Sombra para realzar el marco */
+}
+
+
+/*--------------------------SECCIONES--------------------------*/
+
+.Secciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(33.33% - 20px), 1fr)); /* Ajuste para 3 columnas */
+    gap: 20px;
+}
+
+.seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* --------------------------- FOOTER ----------------------------- */
+.footer { align-items: center;
+    background-color: var(--orange);
+    border-radius: 35px; /* Borde redondeado */
+    overflow: hidden; /* Para que el borde no se vea afectado por los elementos internos */
+    box-shadow: var(--box-shadow);
+    border:5px solid white;
+}
+
+.footer-container {
+    width: 90%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.pie {
+    text-align: center; /* Centrar el texto */
+}
+.footer .pie a {
+    color: var(--blanco); /* Color del texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 10px; /* Espaciado entre enlaces */
+    font-size:13px; /* Tamaño de la fuente */
+}
+
+.footer .pie a:hover {
+    color: var(--gris); /* Cambia el color al pasar el mouse por encima */
+}   

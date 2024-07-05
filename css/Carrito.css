@@ -1,0 +1,285 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --orange: #FF914D;
+    --gris: #464545a3;
+    --blanco: #ffffff;
+    --box-shadow: 0 0.5rem 1.5rem rgb(234, 234, 234);
+    --border: 0.2rem solid rgba(255, 255, 255, 0.896);
+    --outline: 0.1rem solid rgb(214, 61, 61);
+    --outline-hover: 0.2rem solid var(--black);
+}
+
+/* Estilos para el header */
+.header {
+    background-color: var(--orange);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Estilos para los productos */
+.productos {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto h2 {
+    margin: 0 0 1rem;
+    font-size: 1.2rem;
+}
+
+.producto p {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+}
+
+.producto button {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #e57a3b;
+}
+
+/* Estilos para el carro de compras */
+.carro-compras {
+    background-color: white;
+    padding: 2rem;
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+}
+
+.carro-compras h2 {
+    text-align: center;
+    margin: 0 0 2rem;
+}
+
+#carro {
+    list-style-type: none;
+    padding: 0;
+}
+
+#carro li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#carro button {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 0.5rem;
+}
+
+#carro button:hover {
+    background-color: #e57a3b;
+}
+
+/* Estilos para la barra de navegación */
+.menu {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--orange);
+    border-radius: 35px;
+    box-shadow: var(--box-shadow);
+    border: 5px solid white;
+    margin-bottom: 100px;
+}
+
+.menu .logo {
+    padding: 1rem;
+}
+
+.menu .logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.menu .nav {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+}
+
+.menu .nav a {
+    color: var(--blanco);
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.menu .nav a:hover {
+    color: var(--gris);
+}
+
+.menu .social {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.2rem;
+}
+
+.menu .social a {
+    color: var(--gris);
+    padding: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.menu .social i {
+    color: var(--blanco);
+    padding: 1rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    align-items: center;
+}
+
+.menu .social i:hover {
+    color: var(--gris);
+}
+
+/* Estilos para las secciones */
+.Secciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.seccion {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: none;
+}
+
+.info {
+    background-color: rgba(255, 255, 255, 0.092);
+    border-radius: 35px;
+    padding: 5px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--orange);
+}
+
+.info p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgba(108, 105, 105, 0.907);
+}
+
+.agregar {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.agregar:hover {
+    background-color: #ff7f00;
+}
+
+/* Estilos para el footer */
+.footer {
+    align-items: center;
+    background-color: var(--orange);
+    border-radius: 35px;
+    box-shadow: var(--box-shadow);
+    border: 5px solid white;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.pie {
+    text-align: center;
+}
+
+.footer .pie a {
+    color: var(--blanco);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+.footer .pie a:hover {
+    color: var(--gris);
+}
+
+/* Estilos para el aside */
+aside {
+    padding-top: 20px;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 25px;
+    background-color: #ececec;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+aside button {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}

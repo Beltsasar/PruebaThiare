@@ -1,0 +1,130 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Variables CSS */
+:root {
+    --orange: #FF914D;
+    --gris: #464545a3;
+    --blanco: #ffffff;
+    --box-shadow: 0 .5rem 1.5rem rgb(234, 234, 234);
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos para el header */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--orange);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0 0 35px 35px;
+}
+
+.menu .logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.menu .nav a {
+    color: var(--blanco);
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.menu .social a {
+    color: var(--gris);
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.menu .nav a:hover,
+.menu .social a:hover {
+    color: var(--gris);
+}
+
+/* Estilos para el contenido principal */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--blanco);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--orange);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--orange);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e57a3b;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: var(--orange);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 35px 35px 0 0;
+    box-shadow: var(--box-shadow);
+}
+
+.footer .pie a {
+    color: var(--blanco);
+    margin: 0 1rem;
+    font-size: 
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P&H</title>
+    <!-- Cargar la fuente Tajawal desde Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap">
+    <!-- Cargar FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Cargar Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Enlace a tu archivo de estilos personalizado -->
+    <link rel="stylesheet" href="/SMK.3/css/Registro.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="menu">
+            <a href="index.html" class="logo">
+                <img src="/SMK.3/img/logo/logo.png" alt="logo" width="110" height="110">
+            </a>
+            <nav class="nav">
+                <a href="index.html"><i class="fa fa-home"></i> Inicio </a>
+                <a href="/SMK.3/Informacion.html"><i class="fa fa-envelope"></i> Contacto </a>
+                <a href="/SMK.3/registro.html"><i class="fa fa-heart"></i> Regístrate </a>
+            </nav>
+            <div class="social">
+                <div><a href="/SMK.3/Carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
+                <div><a href="/SMK.3/registro.html"><i class="fa-regular fa-user"></i></a></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección del formulario -->
+    <section class="formulario">
+        <form name="form1" id="form1" method="get" action="#" onSubmit="return valida();">
+            <div class="row">
+                <h3>REGÍSTRATE</h3>
+                    <label for="login">Login</label>
+                    <input type="text" name="login" id="login" class="form-control">
+                    <label for="clave">Clave</label>
+                    <input type="password" name="clave" id="clave" class="form-control">
+                    <label for="repetir">Repetir Clave</label>
+                    <input type="password" name="repetir" id="repetir" class="form-control">
+                </div>
+                <div class="col">
+                    
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control">
+                    <label for="fono">Teléfono de Contacto</label>
+                    <input type="text" name="fono" id="fono" class="form-control">
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" id="email" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="comuna">Comuna</label>
+                    <select name="comuna" id="comuna" class="form-select">
+                        <option>Seleccione</option>
+                        <option>Cerrillos</option>
+                        <!-- Otras opciones de comuna aquí -->
+                    </select>
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="edad" class="form-control">
+                </div>
+            </div>
+
+            <!-- Botones de enviar y restablecer -->
+            <div class="centro">
+                <input type="submit" name="btnEnviar" id="btnEnviar" value="Enviar" class="btn btn-primary">
+            </div>
+            <div>
+                <input type="reset" name="btnLimpiar" id="btnLimpiar" value="Restablecer" class="btn btn-secondary">
+            </div>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <nav class="pie">
+            <a href="#">Desarrollado por Daniel Plasencia & Thiare Hernández</a>
+        </nav>
+    </footer>
+
+    <!-- Scripts al final del body -->
+    <script src="/SMK.3/js/Registro.js"></script>
+    <script src="js/carro.js"></script>
+</body>
+</html>
+
